@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyA0UDgRdMom_8JckyORvgrLtidBC1MYeGY",
+    authDomain: "typescript-toptal.firebaseapp.com",
+    databaseURL: "https://typescript-toptal.firebaseio.com",
+    projectId: "typescript-toptal",
+    storageBucket: "typescript-toptal.appspot.com",
+    messagingSenderId: "436391633395",
+    appId: "1:436391633395:web:bbc3b163e163a9ef01b286"
+  },
+  userApi: 'http://localhost:5000/typescript-toptal/us-central1/api'
 };
 
 /*
