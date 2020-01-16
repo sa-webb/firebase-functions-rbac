@@ -5,7 +5,12 @@ import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
 import { routesConfig } from './users/routes-config';
 
-admin.initializeApp();
+var serviceAccount = require("../../serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://typescript-toptal.firebaseio.com"
+});
 
 const app = express();
 app.use(bodyParser.json());
